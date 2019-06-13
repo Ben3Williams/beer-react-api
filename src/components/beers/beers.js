@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { Link } from "react-router-dom";
 
 import styles from './Beers.module.css';
 
@@ -14,6 +15,7 @@ const Beers = ({ beers }) => {
           <h2>{beer.name}</h2>
           <h3>{beer.tagline}</h3>
           <p>{beer.description}</p>
+          <Link to={`${beer.id}`}>View more</Link>
         </article>
       ))}
     </div>
