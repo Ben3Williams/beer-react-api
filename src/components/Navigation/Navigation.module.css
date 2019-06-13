@@ -1,0 +1,36 @@
+.header {
+    background-color: #222831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    flex-direction: column;
+    color: #d65a31;
+}
+
+.link,
+.link:link,
+.link:visited {
+    color: #d65a31;
+    text-decoration: none;
+    padding: 3vw;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        padding: 0 2%;
+    }
+
+    .link,
+    .link:link,
+    .link:visited {
+        padding: 1vw;
+    }
+}
