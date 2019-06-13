@@ -5,17 +5,16 @@ import styles from './Beers.module.css';
 
 const Beers = ({ beers }) => {
   return (
-    <div>
-      <center>
-        <h1>Brewdog's beers produced after November 2015.</h1>
-      </center>
+    <div className={styles.wrapper}>
       {beers.map(beer => (
         <article key={beer.id} className={styles.beer}>
-          <h2>{beer.id}</h2>
+          <img className={styles.img} src={beer.image_url} alt={beer.name} />
           <h2>{beer.name}</h2>
           <h3>{beer.tagline}</h3>
           <p>{beer.description}</p>
-          <Link className={styles.link} to={`${beer.id}`}>View more</Link>
+          <Link className={styles.link} to={`${beer.id}`}>
+            View more
+          </Link>
         </article>
       ))}
     </div>

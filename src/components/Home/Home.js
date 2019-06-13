@@ -19,7 +19,6 @@ class Home extends Component {
 	render() {
 		return (
 			<main>
-				<p>Home</p>
 				<Beers beers={this.state.beers} />
 			</main>
 		)
