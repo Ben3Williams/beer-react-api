@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-
 import Beers from '../Beers/Beers';
+
+import styles from "./Home.module.css";
 
 class Home extends Component {
 
@@ -18,7 +19,7 @@ class Home extends Component {
 	}
 	render() {
 		return (
-			<main>
+			<main className={styles.main}>
 				<Beers beers={this.state.beers} />
 			</main>
 		)
