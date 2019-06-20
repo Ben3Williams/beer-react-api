@@ -50,7 +50,7 @@ export default function BeerDetails(props) {
           <br />
           {beer[0].food_pairing[2]}
         </p>
-          <Link to="/" className={styles.link}>Back to results</Link>
+          <Link to="/" className={styles.button}>Back to results</Link>
       </div>
     </main>
   );
