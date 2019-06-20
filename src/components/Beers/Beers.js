@@ -13,7 +13,7 @@ const Beers = ({ beers }) => {
           <h3>{beer.tagline}</h3>
           <p>{beer.description}</p>
           <Link className={styles.link} to={`${beer.id}`}>
-            View more
+            View details
           </Link>
         </article>
       ))}

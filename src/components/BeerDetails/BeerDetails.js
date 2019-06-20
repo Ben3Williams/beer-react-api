@@ -27,7 +27,7 @@ export default function BeerDetails(props) {
   return beer.loading ? (
     <div>Loading...</div>
   ) : (
-    <div className={styles.details}>
+    <main className={styles.details}>
       <img
         className={styles.img}
         src={beer[0].image_url}
@@ -52,6 +52,6 @@ export default function BeerDetails(props) {
         </p>
           <Link to="/" className={styles.link}>Back to results</Link>
       </div>
-    </div>
+    </main>
   );
 }
