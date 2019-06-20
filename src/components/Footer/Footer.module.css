@@ -1,0 +1,21 @@
+.footer {
+    background-color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    flex-direction: column;
+    color: #d65a31;
+}
+
+.link {
+    color: #d65a31;
+}
+
+@media screen and (min-width: 600px) {
+    .footer {
+        flex-direction: row;
+        padding: 0 2%;
+    }
+
+}
