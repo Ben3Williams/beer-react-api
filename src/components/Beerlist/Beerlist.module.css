@@ -10,8 +10,8 @@
 }
 
 .beer {
-	background-color: #393e46;
-	color: #eee;
+	background-color: #eee;
+	color: #393e46;
 	width: 100vw;
 	display: grid;
   grid-template-columns: 145px 1fr;
@@ -28,8 +28,18 @@
 	margin-top: 6vh;
 }
 
-.link {
-  color: #d65a31;
+.button {
+  background-color: #d65a31;
+	padding: 10px 20px;
+	display: inline-block;
+	width: max-content;
+	text-decoration: none;
+	color: #eee;
+	transition: all .2s;
+}
+
+.button:hover {
+	filter: brightness(85%);
 }
 
 @media screen and (min-width: 700px) {
