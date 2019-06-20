@@ -1,4 +1,23 @@
 .wrapper {
+	background-color: #eee;
+	color: #393e46;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(2, min-content);
+}
+
+.search {
+	width: 80%;
+    justify-self: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 17px;
+	font-size: 17px;
+	margin-top: 5vh;
+}
+
+.list {
+	grid-row: 2 / -1;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
