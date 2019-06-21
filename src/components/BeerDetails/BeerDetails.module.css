@@ -1,7 +1,6 @@
 .details {
-  background-color: #eee;
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: min-content 1fr;
   grid-template-rows: repeat(4, min-content);
   padding-bottom: 6vh;
 }
@@ -11,7 +10,7 @@
 	grid-row: 1 / -1;
 	align-self: self-start;
 	justify-self: center;
-	margin-top: 6vh;
+	margin: 6vh 2vw 0 2vw;
 }
 
 .info {
@@ -20,15 +19,18 @@
 }
 
 .button {
-  background-color: #d65a31;
+	border: 5px solid #222831; 
 	padding: 10px 20px;
 	display: inline-block;
 	width: max-content;
 	text-decoration: none;
-	color: #eee;
+	color: #222831;
 	transition: all .2s;
+	text-transform: uppercase;
+  font-weight: 600;
 }
 
 .button:hover {
-	filter: brightness(85%);
+	background-color: #0018F8;
+	color: #fefefe;
 }
