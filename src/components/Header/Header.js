@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
-import styles from "./Navigation.module.css";
+import styles from "./Header.module.css";
 
-class Navigation extends Component {
+class Header extends Component {
   render() {
     return (
       <header className={styles.header}>
@@ -21,4 +21,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default Header;
