@@ -22,7 +22,7 @@ export default function BeerDetails(props) {
     };
 
     getBeer();
-  }, []);
+  }, [props.match.params.id]);
 
   return beer.loading ? (
     <div>Loading...</div>
@@ -34,7 +34,6 @@ export default function BeerDetails(props) {
         alt={beer[0].name}
       />
       <div className={styles.info}>
-        {/* <h2>{props.match.params.id}</h2> */}
         <h2>{beer[0].name}</h2>
         <h3>{beer[0].tagline}</h3>
         <p>{beer[0].description}</p>
